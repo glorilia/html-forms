@@ -1,35 +1,123 @@
-Order a Melongram
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Order a Melongram!
+        </title>
+    </head>
 
-There's no better way to show a loved one you care than with a Melongram.
+    <body>
+        <header>
+            <h1> 
+                Order a Melongram 
+            </h1>
 
-Each Melongram comes with a custom message printed on high-quality cardstock
-and your choice of a hand-picked, premium melon.
+            <p>
+                There's no better way to show a loved one you care than with a Melongram.
+            </p>
 
-Melon Options
+            <p>
+                Each Melongram comes with a custom message printed on high-quality cardstock and your choice of a hand-picked, premium melon.
+            </p>
+        </header>
 
-Choose from one of these melons:
+        <section>
+            <h2>
+                Melon Options
+            </h2>
 
-Watermelon $1,200.00
-Canteloupe $400.00
-Honeydew $1,750,00.00
+            <p>
+                Choose from one of these melons:
+            </p>
 
-Order Form
+            <table>
+                <tr>
+                    <td>Watermelon</td>
+                    <td> $1,200.00</td>
+                </tr>
 
-Your name
+                <tr>
+                    <td>Canteloupe</td>
+                    <td>$400.00</td>
+                </tr>
 
-Who are we sending this to?
+                <tr>
+                    <td>Honeydew</td>
+                    <td>$1,750,00.00</td>
+                </tr>
 
-Choose a melon
-Watermleon
-Canteloupe
-Honeydew
+            </table>
+        </section>
+        
+        <section>
+            
+            <h2>
+                Order Form
+            </h2>
 
-When should we deliver?
-Morning
-Evening
-Any time
+            <form>
 
-Enter your message:
+                <label for="input-name"> 
+                    Your name 
+                </label>
+                <input type="text" name="name" id="input-name" >
+                
+                <br>
+                <label for="input-recipient">
+                    Who are we sending this to?
+                </label>
+                <input type="text" name="recipient" id="input-recipient">
+                
+                <br>
+                <label for="input-melon">
+                    Choose a melon
+                </label>
+                <br>
+                <select name="melon" id="input-melon">
+                    <option value="watermelon"> Watermleon </option>
+                    <option value="canteloupe"> Canteloupe </option>
+                    <option value="honeydew"> Honeydew </option>
+                </select>
+                
+                <br>
+                <fieldset>
+                    <legend>
+                        When should we deliver?
+                    </legend>
+                
+                    <input type="radio" name="time" value="am" id="morning">
+                    <label for="morning"> Morning </label>
 
-Subscribe to our newsletter
-Yes
+                    <input type="radio" name="time" value="pm" id="evening">
+                    <label for="evening"> Evening </label>
+                    
+                    <input type="radio" name="time" value="any" id ="any-time">
+                    <label for="any-time"> Any time </label>
+                </fieldset>
+                
+
+                <br>
+                <label for="input-message">
+                    Enter your message:
+                </label>
+                <br>
+                <textarea name="message" id="input-message"></textarea>
+
+                <br>
+                
+                Subscribe to our newsletter
+                
+                <br>
+                <input type="checkbox" name="subscribe" value="yes" id="input-yes">
+                <label for="yes"ß> Yes </label>
+                
+                
+
+                <br>
+                <button type="submit"> Submit </button>
+                
+            </form>
+        </section>
+    </body>
+
+</html>
